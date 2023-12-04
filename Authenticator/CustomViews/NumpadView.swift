@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import SwiftUI
 
 struct NumpadView: View {
     @Binding var enteredNumber: String

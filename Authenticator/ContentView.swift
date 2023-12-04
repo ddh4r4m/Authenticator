@@ -17,7 +17,7 @@ struct ContentView: View {
                 .foregroundStyle(.white)
             Spacer(minLength: 5)
 //            PinView(numberOfCircles: 4, fillType: .color(.red), fillCount: enteredNumber.count, fillColor: .black, borderColor: .white.opacity(0.2))
-            OTPView(numberOfCircles: 4, fillColor: .purple, borderColor: .black, otp: [1,2])
+            OTPView(numberOfCircles: 4, fillColor: .purple, borderColor: .black, otp: OtpValue(from: enteredNumber))
             
             Spacer()
 
@@ -32,6 +32,10 @@ struct ContentView: View {
             )
             .edgesIgnoringSafeArea(.all)
         )
+    }
+    
+    private func OtpValue(from otpString: String) -> [Int] {
+        return self.enteredNumber.compactMap { Int(String($0)) }
     }
 }
 #Preview {
