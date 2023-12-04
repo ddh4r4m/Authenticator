@@ -7,8 +7,14 @@
 
 import SwiftUI
 
+enum PinViewFillType {
+    case color(Color)
+    case count(Int)
+}
+
 struct PinView: View {
     let numberOfCircles: Int
+    let fillType: PinViewFillType
     let fillCount: Int
     let fillColor: Color
     let borderColor: Color
@@ -26,8 +32,17 @@ struct PinView: View {
             }
         }
     }
+    
+    private func fillColor(for index: Int) -> Color {
+        switch fillType {
+        case .color(let color):
+            return color
+        case .count(let count):
+            return index < count ? fillColor : .clear
+        }
+    }
 }
 
 #Preview {
-    PinView(numberOfCircles: 3, fillCount: 2, fillColor: .red, borderColor: .black)
+    PinView(numberOfCircles: 3, fillType: .color(.black), fillCount: 2, fillColor: .red, borderColor: .black)
 }
