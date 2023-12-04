@@ -18,6 +18,7 @@
 		8D0820412B1E3C0300813D79 /* AuthenticatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0820402B1E3C0300813D79 /* AuthenticatorUITestsLaunchTests.swift */; };
 		8D08204E2B1E440400813D79 /* NumpadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D08204D2B1E440400813D79 /* NumpadView.swift */; };
 		8D0820502B1E4CA800813D79 /* PinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D08204F2B1E4CA800813D79 /* PinView.swift */; };
+		8D0820532B1E554700813D79 /* OTPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0820522B1E554700813D79 /* OTPView.swift */; };
 		E1291D2A39AA167706444F7B /* Pods_Authenticator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD76FE63F594AF550A26E106 /* Pods_Authenticator.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +58,7 @@
 		8D0820402B1E3C0300813D79 /* AuthenticatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8D08204D2B1E440400813D79 /* NumpadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumpadView.swift; sourceTree = "<group>"; };
 		8D08204F2B1E4CA800813D79 /* PinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinView.swift; sourceTree = "<group>"; };
+		8D0820522B1E554700813D79 /* OTPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPView.swift; sourceTree = "<group>"; };
 		A00169772B3AB4C89B6C3477 /* Pods-AuthenticatorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthenticatorTests.release.xcconfig"; path = "Target Support Files/Pods-AuthenticatorTests/Pods-AuthenticatorTests.release.xcconfig"; sourceTree = "<group>"; };
 		B51D1275CD9AAF84AA309AFB /* Pods-AuthenticatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthenticatorTests.debug.xcconfig"; path = "Target Support Files/Pods-AuthenticatorTests/Pods-AuthenticatorTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DD76FE63F594AF550A26E106 /* Pods_Authenticator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Authenticator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -164,6 +166,7 @@
 			children = (
 				8D08204F2B1E4CA800813D79 /* PinView.swift */,
 				8D08204D2B1E440400813D79 /* NumpadView.swift */,
+				8D0820522B1E554700813D79 /* OTPView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -384,6 +387,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D0820262B1E3C0200813D79 /* ContentView.swift in Sources */,
+				8D0820532B1E554700813D79 /* OTPView.swift in Sources */,
 				8D08204E2B1E440400813D79 /* NumpadView.swift in Sources */,
 				8D0820502B1E4CA800813D79 /* PinView.swift in Sources */,
 				8D0820242B1E3C0200813D79 /* AuthenticatorApp.swift in Sources */,
